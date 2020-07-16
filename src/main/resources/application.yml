@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /poc-multitenant-api/v1
+
+spring:
+  application:
+    name: MultiTenant
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/test?ApplicationName=MultiTenant'
+    username: 'postgres'
+    password: 'Rsteady64'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
